@@ -23,3 +23,6 @@ class BaseConfig(object):
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
     SQLALCHEMY_DATABASE_URI = os.environ.get("FLASK_OIDC_SQLALCHEMY_DATABASE_URI", 'sqlite:///sessions.db')
+
+    OVERWRITE_REDIRECT_URI = os.environ.get("FLASK_OIDC_REDIRECT_OVERRIDE", False)
+    OIDC_CLOCK_SKEW = int(os.environ.get("FLASK_OIDC_CLOCK_SKEW", "60"))

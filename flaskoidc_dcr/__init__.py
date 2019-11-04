@@ -4,8 +4,8 @@ from flask_oidc import OpenIDConnect
 from flask_session import Session
 from flask_sqlalchemy import SQLAlchemy
 
-from flaskoidc.config import BaseConfig
-from flaskoidc.store import SessionCredentialStore
+from flaskoidc_dcr.config import BaseConfig
+from flaskoidc_dcr.store import SessionCredentialStore
 
 
 class FlaskOIDC(Flask):
